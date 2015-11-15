@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <project default="run" name="Examples using ant with java" basedir=".">
+ 	<property name="main.folder" value="${basedir}"/>
+ 	<property name="folder.jars" value="C:\Users\Sol\Desktop\jar"/>
+ 	<property name="test.destination" value="${main.folder}/binary"/>
+ 	<property name="test.src" value="${main.folder}/src"/>
+ 	<path id="cp">
+ 		<pathelement path="${folder.jars}/testng.jar"/>
+ 		<pathelement path="${folder.jars}/selenium-server-standalone-2.46.0.jar"/>
+ 		<pathelement path="${folder.jars}/testng.selenium-java-client-driver-1.0.1.jar"/>
+ 		<pathelement path="${test.destination}"/>
+ 	</path>
+ 	<taskdef resource="testngtasks" classpathref="cp">
+ 	</taskdef>
+ 	<target name="compile">
+ 		<javac destdir="${test.destination}" srcdir="${test.src}" includeantruntime="false">
+ 		</javac>
+ 
+ 	</target>
+ 	<target name="run" depends="compile">
+ 		<testng classpathref="cp">
+ 			<xmlfileset dir="${main.folder}" includes="testng.xml"></xmlfileset>
+ 		</testng>
+ 	</target>
+</project>

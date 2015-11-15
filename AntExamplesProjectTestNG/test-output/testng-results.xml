@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="ant" duration-ms="56326" started-at="2015-11-10T02:22:52Z" finished-at="2015-11-10T02:23:48Z">
+    <groups>
+    </groups>
+    <test name="ant" duration-ms="56326" started-at="2015-11-10T02:22:52Z" finished-at="2015-11-10T02:23:48Z">
+      <class name="com.myproject.test.AntwihTestNg">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.myproject.test.AntwihTestNg@3b42c565]" name="setup" is-config="true" duration-ms="32872" started-at="2015-11-09T22:22:52Z" finished-at="2015-11-09T22:23:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testMethod()[pri:0, instance:com.myproject.test.AntwihTestNg@3b42c565]" name="testMethod" duration-ms="23310" started-at="2015-11-09T22:23:25Z" finished-at="2015-11-09T22:23:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.myproject.test.AntwihTestNg@3b42c565]" name="tearDown" is-config="true" duration-ms="1" started-at="2015-11-09T22:23:48Z" finished-at="2015-11-09T22:23:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.myproject.test.AntwihTestNg -->
+    </test> <!-- ant -->
+  </suite> <!-- ant -->
+</testng-results>
