@@ -13,7 +13,7 @@
  	<taskdef resource="testngtasks" classpathref="cp">
  	</taskdef>
  	<target name="compile">
- 		<javac destdir="${test.destination}" srcdir="${test.src}" includeantruntime="false">
+ 		<javac destdir="${test.destination}" srcdir="${test.src}" includeantruntime="false" classpathref="cp">
  		</javac>
  
  	</target>
